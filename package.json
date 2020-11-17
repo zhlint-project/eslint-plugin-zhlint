@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-zhlint",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ESLint plugin for Chinese typographies (中文排版) with zhlint",
   "keywords": [
     "eslint",
@@ -11,7 +11,7 @@
   "author": "Stackie Jia <jsq2627@gmail.com>",
   "main": "lib/index.js",
   "files": [
-    "./lib/**/*.js"
+    "lib/**/*.js"
   ],
   "scripts": {
     "test": "mocha tests --recursive"
