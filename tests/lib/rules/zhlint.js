@@ -8,6 +8,10 @@ ruleTester.run("zhlint", rule, {
     `"2020年10月10日"`,
     "`你好\nabc`",
     '"../../constants/config"',
+    {
+      code: `"你好（世界）"`,
+      options: [{ zhlint: { rules: { fullWidthPunctuation: "（）" } } }],
+    },
   ],
   invalid: [
     {

@@ -1,4 +1,4 @@
-# <img src="https://raw.githubusercontent.com/Jinjiang/zhlint/master/logo.svg" style="vertical-align: middle;"> eslint-plugin-zhlint
+# <img src="https://raw.githubusercontent.com/Jinjiang/zhlint/master/docs/logo.svg" style="vertical-align: middle;"> eslint-plugin-zhlint
 
 Linting Chinese typographies in JavaScript/TypeScript with [zhlint](https://github.com/Jinjiang/zhlint).
 
@@ -49,7 +49,10 @@ or with options:
         "lintComments": true,
         "lintStringLiterals": true,
         "zhlint": {
-          "rules": ["space-full-width-content", "space-punctuation"]
+          "rules": {
+            "fullWidthPunctuation": "，。：；？！“”‘’（）",
+            "unifiedPunctuation": "traditional"
+          }
         }
       }
     ]
