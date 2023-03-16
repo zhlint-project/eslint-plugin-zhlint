@@ -27,5 +27,6 @@
   "engines": {
     "node": "^14.17.0 || >=16.0.0"
   },
+  "packageManager": "pnpm@7.29.3",
   "license": "MIT"
 }
