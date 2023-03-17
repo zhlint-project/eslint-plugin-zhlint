@@ -10,7 +10,7 @@ ruleTester.run("zhlint", rule, {
     '"../../constants/config"',
     {
       code: `"你好（世界）"`,
-      options: [{ zhlint: { rules: { fullWidthPunctuation: "（）" } } }],
+      options: [{ zhlint: { rules: { halfWidthPunctuation: "" } } }],
     },
   ],
   invalid: [
@@ -58,6 +58,22 @@ ruleTester.run("zhlint", rule, {
         },
       ],
       output: `// 你好 abc`,
+    },
+    {
+      code: `"你好， （世界）"`,
+      errors: [
+        {
+          messageId: "zhlint",
+        },
+        {
+          messageId: "zhlint",
+        },
+        {
+          messageId: "zhlint",
+        },
+      ],
+      options: [{ zhlint: { rules: { halfWidthPunctuation: ",()" } } }],
+      output: `"你好, (世界)"`,
     },
   ],
 });

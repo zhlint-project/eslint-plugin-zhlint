@@ -50,6 +50,7 @@ or with options:
         "lintStringLiterals": true,
         "zhlint": {
           "rules": {
+            "halfWidthPunctuation": "",
             "fullWidthPunctuation": "，。：；？！“”‘’（）",
             "unifiedPunctuation": "traditional"
           }
@@ -64,7 +65,7 @@ or with options:
 
 - `lintComments` (boolean, default `true`): `true` to enable zhlint in `//` or `/* ... */` comments
 - `lintStringLiterals` (boolean, default `true`): `true` to enable zhlint in string literals (single-quoted / double-quoted strings, and template literals)
-- `zhlint` (object): options passed down to [zhlint](https://github.com/Jinjiang/zhlint#other-type-defs-and-advanced-usage)
+- `zhlint` (object): options passed down to [zhlint](https://github.com/Jinjiang/zhlint#options)
 
 ## Supported rules
 
